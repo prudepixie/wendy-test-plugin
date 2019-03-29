@@ -8,6 +8,7 @@
   "main": "src/index.js",
   "dependencies": {
     "@babel/runtime": "^7.3.1",
+    "text-transform": "^0.1.2",
     "vhtml": "^2.1.0"
   },
   "devDependencies": {
@@ -47,7 +48,7 @@
     "babel-core": "6.x || ^7.0.0-bridge.0"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -cw",
     "prebuild": "prettier --write src/**",
     "serve": "rollup -cwm",
     "start": "rollup -cwm  --environment RUN",

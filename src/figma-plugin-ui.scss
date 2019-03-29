@@ -78,7 +78,8 @@
     margin-top: -8px;
   }
 
-  input {
+  input,
+  #dynamicList {
     background-color: #fff;
     color: #444;
     border: 1px solid #d4d4d4;
@@ -205,5 +206,15 @@
     justify-content: flex-end;
     align-items: center;
     padding: 0 12px;
+  }
+  // wendy's crap
+  button.dy-buttons {
+    display: inline-block;
+    border-radius: 20px;
+    span {
+      margin-left: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
   }
 }
