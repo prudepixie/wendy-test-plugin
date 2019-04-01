@@ -13,9 +13,7 @@ export const getDataWithParams = async (urlParams, numOfItems) => {
       }
     })
     .join(",");
-  console.log("urlParamStr", urlParamStr);
   const url = `https://randomuser.me/api/?inc=${urlParamStr}&results=${numOfItems}`;
-  console.log("url", url);
   const data = await getData(url);
   return data;
 };
